@@ -1,3 +1,10 @@
+module Tree (
+    Tree(..),
+    singleton,
+    treeInsert,
+    treeElem
+) where
+
 data Tree a = EmptyTree | Node a (Tree a) (Tree a) deriving (Show)
 
 singleton :: a -> Tree a
