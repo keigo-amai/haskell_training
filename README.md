@@ -1,0 +1,2 @@
+# haslell_training
+haskellの練習したファイルを置いていく
