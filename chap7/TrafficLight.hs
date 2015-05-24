@@ -1,16 +1,18 @@
-module TraficLights (
-    TraficLights(..)
+module TrafficLight (
+    TrafficLight(..)
 ) where
 
-data TraficLights = Red | Yellow | Green
+-- data TrafficLight = Red | Yellow | Green deriving (Eq, Show)
 
-instance Eq TraficLights where
+data TrafficLight = Red | Yellow | Green
+
+instance Eq TrafficLight where
     Red == Red = True
     Yellow == Yellow = True
     Green == Green = True
     _ == _ = False
 
-instance Show TraficLights where
+instance Show TrafficLight where
     show Red = "red light"
     show Yellow = "yellow light"
     show Green = "green light"
